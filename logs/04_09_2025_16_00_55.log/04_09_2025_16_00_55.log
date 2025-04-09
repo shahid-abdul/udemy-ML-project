@@ -1,0 +1,5 @@
+[ 2025-04-09 16:00:56,399 ] 21 root - INFO - Entered data ingestion
+[ 2025-04-09 16:00:56,403 ] 24 root - INFO - Read dataset
+[ 2025-04-09 16:00:56,405 ] 29 root - INFO - Saved raw data
+[ 2025-04-09 16:00:56,405 ] 31 root - INFO - Initiating train-test split
+[ 2025-04-09 16:00:56,409 ] 36 root - INFO - Data ingestion completed
