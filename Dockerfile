@@ -1,4 +1,4 @@
-# Use Python 3.11.7 base image (Corrected image name)
+# Use Python 3.11.7 base image
 FROM python:3.11-slim-buster
 
 # Set the working directory
@@ -11,8 +11,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application code
 COPY . .
 
-# Expose port 5000 (based on your latest app.py)
+# Copy the templates folder
+COPY templates /app/templates
+
+# Expose port 5000
 EXPOSE 5000
 
 # Run the Flask application
-CMD ["python", "app.py"]
+CMD ["python","app.py"]
